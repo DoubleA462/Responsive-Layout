@@ -10,6 +10,8 @@
 
 a {
     text-decoration: none;
+    color: rgb(106, 106, 106);
+    font-weight: bold;
 }
 
 body {
@@ -92,28 +94,26 @@ p {
     margin-bottom: 2em;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.number,
-.email,
-.student,
-.back {
-    color: rgb(131, 130, 130);
-    font-weight: bold;
-}
-
 hr {
     border: 1px solid rgb(238, 237, 237);
 }
-
-.student,
-.back {
-    font-size: 13px;
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
-
+.footer-ul {
+    display: none;
+}
+.student,
+.top {
+    font-size: 13px;
+    font-weight: bold;
+}
+.top {
+    text-transform: uppercase;
+}
 
 
 
@@ -142,21 +142,53 @@ hr {
         justify-content: space-around;
     }
     .profile-img {
-        width: 40%;
+        width: 35%;
         padding: 0;
     }
     .profile-about {
-        font-size: 1.5em;
+        font-size: 1.25em;
         margin: 0;
         padding-right: 1em;
+        text-align: left;
     }
-    .container-1 .row {
+    .container-1  {
         display: flex;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;   
     }
      .column {
         width: 50%;
+        padding: 7px;  
+    } 
+    .column p {
+        padding: 0 1em 0 1em;
     }
+    .contact  p {
+        padding: 2em 8em 2em 8em;
+    }
+    .number, .email {
+        color: rgb(113, 111, 111);
+        font-weight: bold;
+    }
+    .footer-nav {
+        padding: .5em 0 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-ul  {
+        display: block; 
+    }
+    .footer-ul li {
+        display: inline;
+        padding: .5em;
+        text-transform: uppercase;
+        font-size: 13px;
+
+    }
+    .top {
+        display: none;
+    }
+
+
 
 }
