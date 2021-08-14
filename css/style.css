@@ -108,7 +108,7 @@ hr {
 }
 .student,
 .top {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
 }
 .top {
@@ -166,7 +166,7 @@ hr {
         padding: 2em 8em 2em 8em;
     }
     .number, .email {
-        color: rgb(113, 111, 111);
+        color: rgb(136, 136, 136);
         font-weight: bold;
     }
     .footer-nav {
@@ -183,12 +183,55 @@ hr {
         padding: .5em;
         text-transform: uppercase;
         font-size: 13px;
-
     }
     .top {
         display: none;
     }
+}
 
-
+@media (min-width: 1024px) {
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        margin: 2em 0 2em 0;
+    }
+    .nav-page {
+        padding: 0;
+    }
+    .container {
+        margin: 0 1em 6em 1em;
+    }
+    .profile-about {
+		padding-right: 3em;
+	}
+    .portfolio {
+        font-size: 15px;
+    }
+    .container-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column {
+        width: 33%;
+        margin: 0;
+        padding: .5em;
+    }
+    .column h3 {
+        color: rgb(94, 94, 94);
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .column p {
+        padding: 0;
+    }
+    .contact p {
+        font-size: 1.3em;
+        padding-top: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .footer-nav h3 {
+       font-size: 15px;
+    }
 
 }
